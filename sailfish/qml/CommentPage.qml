@@ -259,7 +259,7 @@ AbstractPage {
                         textFormat: Text.RichText
                         font.pixelSize: constant.fontSizeDefault
                         color: constant.colorLight
-                        text: link.text
+                        text: "<style>a:link { color: " + Theme.highlightColor + "; }</style>" + link.text
                         onLinkActivated: globalUtils.openInTextLink(link);
                     }
 
