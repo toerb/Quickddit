@@ -178,7 +178,7 @@ Item {
                                         : constant.colorDisabled
                 wrapMode: Text.Wrap
                 textFormat: Text.RichText
-                text: model.body
+                text: "<style>a:link { color: " + Theme.highlightColor + "; }</style>" + model.body
                 onLinkActivated: globalUtils.openInTextLink(link);
             }
         }
